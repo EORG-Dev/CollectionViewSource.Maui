@@ -1,20 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <AssemblyName>CollectionViewSource.Forms</AssemblyName>
+    <AssemblyName>CollectionViewSource.Maui</AssemblyName>
     <TargetFramework>netstandard2.0</TargetFramework>
 	  <TargetFrameworks>net6.0;net6.0-android;net6.0-ios</TargetFrameworks>
-	  <RootNamespace>Rotorsoft.Forms</RootNamespace>
+	  <RootNamespace>Rotorsoft.Maui</RootNamespace>
   </PropertyGroup>
   
   <PropertyGroup>
-    <PackageId>CollectionViewSource.Forms</PackageId>
-    <Authors>Rotorsoft Ltd.</Authors>
-    <PackageProjectUrl>https://github.com/rotorsoft-ltd/CollectionViewSource.Forms</PackageProjectUrl>
+    <PackageId>CollectionViewSource.Maui</PackageId>
+    <Authors>EORG-dev</Authors>
+    <PackageProjectUrl>https://github.com/EORG-Dev/CollectionViewSource.Maui</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/rotorsoft-ltd/CollectionViewSource.Forms.git</RepositoryUrl>
-    <Description>A CollectionViewSource implementation for Xamarin Forms that supports filtering, sorting and grouping.</Description>
-    <PackageTags>xamarin, collectionviewsource, xamarin.forms</PackageTags>
+    <RepositoryUrl>https://github.com/EORG-Dev/CollectionViewSource.Mauigit</RepositoryUrl>
+    <Description>A CollectionViewSource implementation for .net MAUI that supports filtering, sorting and grouping.</Description>
+    <PackageTags>collectionviewsource, .net maui</PackageTags>
 	<PackageLicenseFile>LICENSE</PackageLicenseFile>
 	<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
