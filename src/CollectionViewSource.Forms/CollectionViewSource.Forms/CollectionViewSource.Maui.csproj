@@ -17,6 +17,8 @@
     <PackageTags>collectionviewsource, .net maui</PackageTags>
 	<PackageLicenseFile>LICENSE</PackageLicenseFile>
 	<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Version>1.0.1</Version>
   </PropertyGroup>
   
   <ItemGroup>
@@ -24,8 +26,7 @@
 </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.92" />
-    <PackageReference Include="Microsoft.Maui.Core" Version="8.0.92" />
+    <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.82" />
   </ItemGroup>
   
 </Project>
