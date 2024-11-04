@@ -3,7 +3,8 @@
   <PropertyGroup>
     <AssemblyName>CollectionViewSource.Forms</AssemblyName>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Rotorsoft.Forms</RootNamespace>
+	  <TargetFrameworks>net6.0;net6.0-android;net6.0-ios</TargetFrameworks>
+	  <RootNamespace>Rotorsoft.Forms</RootNamespace>
   </PropertyGroup>
   
   <PropertyGroup>
@@ -16,11 +17,7 @@
     <PackageTags>xamarin, collectionviewsource, xamarin.forms</PackageTags>
 	<PackageLicenseFile>LICENSE</PackageLicenseFile>
 	<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-  </PropertyGroup>  
-  
-  <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="2.5.1.527436" />
-  </ItemGroup>
+  </PropertyGroup>
   
   <ItemGroup>
     <None Include="../../../LICENSE" Pack="true" PackagePath="" />
