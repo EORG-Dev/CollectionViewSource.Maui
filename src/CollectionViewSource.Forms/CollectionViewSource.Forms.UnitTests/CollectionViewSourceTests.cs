@@ -1,4 +1,4 @@
-using Rotorsoft.Forms;
+using Rotorsoft.Maui;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,7 +14,7 @@ namespace CollectionViewSource.Forms.UnitTests
         [Fact]
         public void Constructor()
         {
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
 
             Assert.Null(cvs.Source);
             Assert.Null(cvs.View);
@@ -25,7 +25,7 @@ namespace CollectionViewSource.Forms.UnitTests
         [Fact]
         public void SourceWithEmptyEnumerable()
         {
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = new TestEnumerable();
 
             Assert.NotNull(cvs.Source);
@@ -41,7 +41,7 @@ namespace CollectionViewSource.Forms.UnitTests
         [Fact]
         public void SourceWithEmptyList()
         {
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = new List<object>();
 
             Assert.NotNull(cvs.Source);
@@ -62,7 +62,7 @@ namespace CollectionViewSource.Forms.UnitTests
                 "Lorem Ipsum"
             });
 
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = items;
 
             Assert.Same(items, cvs.Source);
@@ -78,7 +78,7 @@ namespace CollectionViewSource.Forms.UnitTests
                 "Lorem Ipsum"
             };
 
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = items;
 
             Assert.Same(items, cvs.Source);
@@ -98,7 +98,7 @@ namespace CollectionViewSource.Forms.UnitTests
 
             Predicate<object> filterPredicate = (item) => item is string;
 
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = items;
             cvs.Filter = filterPredicate;
 
@@ -120,7 +120,7 @@ namespace CollectionViewSource.Forms.UnitTests
 
             Predicate<object> filterPredicate = (item) => item is string;
 
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = items;
             cvs.Filter = filterPredicate;
 
@@ -135,7 +135,7 @@ namespace CollectionViewSource.Forms.UnitTests
         {
             var items = new TestEnumerable(new TestModel[0]);
 
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = items;
 
             var sortDescriptions = new ObservableCollection<SortDescription>()
@@ -151,7 +151,7 @@ namespace CollectionViewSource.Forms.UnitTests
         {
             var items = new TestEnumerable(new TestModel[0]);
 
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = items;
             cvs.SortDescriptions = new ObservableCollection<SortDescription>();
 
@@ -170,7 +170,7 @@ namespace CollectionViewSource.Forms.UnitTests
 
             Predicate<object> filterPredicate = (item) => item is string;
 
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = items;
             cvs.Filter = filterPredicate;
 
@@ -193,7 +193,7 @@ namespace CollectionViewSource.Forms.UnitTests
                 new TestModel("Jemmie Chesshire", 36),
             };
 
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = items;
             cvs.SortDescriptions = new ObservableCollection<SortDescription>()
             {
@@ -216,7 +216,7 @@ namespace CollectionViewSource.Forms.UnitTests
                 new TestModel("Jemmie Chesshire", 36),
             };
 
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = items;
             cvs.SortDescriptions = new ObservableCollection<SortDescription>()
             {
@@ -239,7 +239,7 @@ namespace CollectionViewSource.Forms.UnitTests
                 new TestModel("Jemmie Chesshire", 36),
             };
 
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = items;
             cvs.SortDescriptions = new ObservableCollection<SortDescription>();
             cvs.SortDescriptions.Add(new SortDescription(nameof(TestModel.Score), ListSortDirection.Ascending));
@@ -260,7 +260,7 @@ namespace CollectionViewSource.Forms.UnitTests
                 new TestModel("Jemmie Chesshire", 36),
             };
 
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = items;
             cvs.SortDescriptions = new ObservableCollection<SortDescription>();
             cvs.SortDescriptions.Add(new SortDescription(nameof(TestModel.Score), ListSortDirection.Descending));
@@ -281,7 +281,7 @@ namespace CollectionViewSource.Forms.UnitTests
                 new TestModel("Jemmie Chesshire", 36),
             };
 
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = items;
             cvs.SortDescriptions = new ObservableCollection<SortDescription>()
             {
@@ -304,7 +304,7 @@ namespace CollectionViewSource.Forms.UnitTests
                 new TestModel("Jemmie Chesshire", 36),
             };
 
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = items;
             cvs.Filter = (item) => (item as TestModel).Score > 15;
             cvs.SortDescriptions = new ObservableCollection<SortDescription>()
@@ -331,7 +331,7 @@ namespace CollectionViewSource.Forms.UnitTests
                 new TestModel("Jemmie Chesshire", 36),
             };
 
-            var cvs = new Rotorsoft.Forms.CollectionViewSource();
+            var cvs = new Rotorsoft.Maui.CollectionViewSource();
             cvs.Source = items;
             cvs.Filter = (item) => (item as TestModel).Score > 15;
             cvs.SortDescriptions = new ObservableCollection<SortDescription>()
