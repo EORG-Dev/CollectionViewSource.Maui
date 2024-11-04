@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 
-namespace Rotorsoft.Forms
+namespace Rotorsoft.Maui
 {
     public interface ICollectionView : IEnumerable, INotifyCollectionChanged
     {
@@ -42,7 +42,7 @@ namespace Rotorsoft.Forms
         /// </summary>
         /// <remarks>
         /// <p>
-        /// One or more sort criteria in form of <see cref="Rotorsoft.Forms.SortDescription"/>
+        /// One or more sort criteria in form of <see cref="Rotorsoft.Maui.SortDescription"/>
         /// can be added, each specifying a property and direction to sort by.
         /// </p>
         /// </remarks>

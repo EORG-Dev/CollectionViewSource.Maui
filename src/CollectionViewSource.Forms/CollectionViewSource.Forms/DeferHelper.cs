@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Rotorsoft.Forms
+namespace Rotorsoft.Maui
 {
     internal class DeferHelper : IDisposable
     {

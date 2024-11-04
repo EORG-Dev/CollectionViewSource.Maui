@@ -1,4 +1,4 @@
-﻿namespace Rotorsoft.Forms
+﻿namespace Rotorsoft.Maui
 {
     internal struct SortPropertyInfo
     {

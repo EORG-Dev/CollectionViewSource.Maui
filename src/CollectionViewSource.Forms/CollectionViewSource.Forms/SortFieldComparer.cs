@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace Rotorsoft.Forms
+namespace Rotorsoft.Maui
 {
     internal class SortFieldComparer : IComparer
     {

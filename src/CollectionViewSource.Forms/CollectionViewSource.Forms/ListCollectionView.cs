@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Specialized;
 
-namespace Rotorsoft.Forms
+namespace Rotorsoft.Maui
 {
     internal class ListCollectionView : CollectionView, IComparer, IDisposable
     {

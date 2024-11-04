@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace Rotorsoft.Forms
+namespace Rotorsoft.Maui
 {
     public class SortDescription
     {

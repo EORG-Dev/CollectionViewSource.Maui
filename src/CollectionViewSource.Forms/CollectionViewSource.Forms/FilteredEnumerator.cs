@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace Rotorsoft.Forms
+namespace Rotorsoft.Maui
 {
     internal class FilteredEnumerator : IEnumerator, IDisposable
     {

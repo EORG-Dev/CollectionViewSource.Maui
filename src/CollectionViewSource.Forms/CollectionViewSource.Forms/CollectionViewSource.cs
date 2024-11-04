@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Microsoft.Maui.Controls;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
-using Xamarin.Forms;
 
-namespace Rotorsoft.Forms
+namespace Rotorsoft.Maui
 {
     public class CollectionViewSource : BindableObject
     {
